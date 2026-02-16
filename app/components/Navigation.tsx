@@ -22,8 +22,8 @@ export default function Navigation() {
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/logo.svg"
-            alt="Providence Elite HVAC"
-            width={160}
+            alt="Providence HVAC"
+            width={200}
             height={48}
             className="h-10 w-auto sm:h-12"
             priority
