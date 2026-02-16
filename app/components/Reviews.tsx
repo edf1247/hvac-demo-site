@@ -71,7 +71,7 @@ export default function Reviews() {
             href="#"
             className="text-amber-dark font-medium hover:text-amber-accent underline"
           >
-            See all 200+ reviews on Google
+            Dozens of 5-star reviews on Google
           </a>
         </p>
         </AnimatedSection>

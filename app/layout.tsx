@@ -17,7 +17,19 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Providence Elite Heating & Cooling | HVAC Repair & Installation",
   description:
-    "Providence's trusted HVAC repair and installation. 20+ years experience. Same-day service. Licensed, insured. Call (401) 555-HVAC.",
+    "Providence's trusted HVAC repair and installation. Same-day service. Licensed, insured. Serving Providence, Cranston, Pawtucket, Warwick. Call (401) 555-HVAC.",
+  openGraph: {
+    title: "Providence Elite Heating & Cooling | HVAC Repair & Installation",
+    description:
+      "Providence's trusted HVAC repair and installation. Same-day service. Licensed, insured. Call (401) 555-HVAC.",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Providence Elite Heating & Cooling | HVAC Repair & Installation",
+    description:
+      "Providence's trusted HVAC repair and installation. Same-day service. Licensed, insured.",
+  },
 };
 
 export default function RootLayout({

@@ -14,24 +14,28 @@ const services = [
     title: "Heating Repair & Installation",
     description:
       "Furnaces, heat pumps, and boilers. We keep Providence homes warm all winter.",
+    href: "/heating-repair",
   },
   {
     icon: Snowflake,
     title: "AC Repair & Installation",
     description:
       "Fast repairs and energy-efficient installations for lasting comfort.",
+    href: "/ac-repair",
   },
   {
     icon: Wind,
-    title: "Ductwork & Ventilation",
+    title: "Heat Pumps",
     description:
-      "Clean ducts, better airflow, and improved indoor air quality.",
+      "Installation, repair, and maintenance of heat pumps for year-round comfort.",
+    href: "/heat-pumps",
   },
   {
     icon: AlertCircle,
     title: "Emergency Services",
     description:
-      "24/7 availability when you need us most. No overtime charges for emergencies.",
+      "24/7 availability when you need us most. Same-day and emergency service.",
+    href: "#contact",
   },
 ];
 
@@ -50,7 +54,7 @@ export default function Services() {
           </p>
         </div>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map(({ icon: Icon, title, description }) => (
+          {services.map(({ icon: Icon, title, description, href }) => (
             <div
               key={title}
               className="group rounded-2xl border border-gray-100 bg-cream/50 p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
@@ -63,7 +67,7 @@ export default function Services() {
               </h3>
               <p className="mt-2 text-gray-600">{description}</p>
               <Link
-                href="#contact"
+                href={href}
                 className="mt-4 inline-flex items-center gap-1 text-amber-dark font-medium hover:text-amber-accent transition-colors"
               >
                 Learn More

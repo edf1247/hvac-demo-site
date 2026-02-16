@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Removed 'output: export' for Vercel deployment
-  // Vercel handles Next.js hosting natively with better performance
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "images.unsplash.com", pathname: "/**" },
+      { protocol: "https", hostname: "www.neit.edu", pathname: "/**" },
+    ],
+  },
 };
 
 module.exports = nextConfig;

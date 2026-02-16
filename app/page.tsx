@@ -4,6 +4,8 @@ import EmergencyBanner from "./components/EmergencyBanner";
 import Services from "./components/Services";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Reviews from "./components/Reviews";
+import ServiceAreas from "./components/ServiceAreas";
+import FAQ from "./components/FAQ";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import StickyCallButton from "./components/StickyCallButton";
@@ -18,6 +20,8 @@ export default function Home() {
         <Services />
         <WhyChooseUs />
         <Reviews />
+        <ServiceAreas />
+        <FAQ />
         <ContactForm />
         <Footer />
       </main>

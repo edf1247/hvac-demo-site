@@ -5,9 +5,9 @@ const PHONE = "tel:+14015554842";
 const serviceAreas = ["Providence", "Cranston", "Pawtucket", "Warwick"];
 
 const quickLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#reviews", label: "Reviews" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#services", label: "Services" },
+  { href: "/#reviews", label: "Reviews" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Footer() {
@@ -21,7 +21,7 @@ export default function Footer() {
             </h3>
             <p className="mt-2 text-sm text-blue-100">
               Licensed, insured HVAC repair and installation serving Providence
-              and Rhode Island since 2004.
+              and Rhode Island. Top-rated local team.
             </p>
           </div>
           <div>
@@ -64,7 +64,10 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-navy-light pt-8 text-center text-sm text-blue-200">
+        <div className="mt-12 border-t border-navy-light pt-8 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-sm text-blue-200">
+          <span className="inline-flex items-center rounded-full border border-amber-accent/60 bg-amber-accent/10 px-3 py-1 text-amber-200 text-xs font-medium">
+            Demo site — for portfolio / proof of concept
+          </span>
           <p>© {new Date().getFullYear()} Providence Elite Heating & Cooling. All rights reserved.</p>
         </div>
       </div>

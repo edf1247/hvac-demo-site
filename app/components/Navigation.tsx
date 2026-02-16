@@ -2,14 +2,15 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone } from "lucide-react";
 
 const PHONE = "tel:+14015554842";
 
 const navLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#reviews", label: "Reviews" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#services", label: "Services" },
+  { href: "/#reviews", label: "Reviews" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Navigation() {
@@ -18,11 +19,15 @@ export default function Navigation() {
   return (
     <header className="sticky top-0 z-40 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
-        <Link
-          href="#"
-          className="font-display text-xl font-semibold text-navy sm:text-2xl"
-        >
-          Providence Elite HVAC
+        <Link href="/" className="flex items-center gap-2">
+          <Image
+            src="/logo.svg"
+            alt="Providence Elite HVAC"
+            width={160}
+            height={48}
+            className="h-10 w-auto sm:h-12"
+            priority
+          />
         </Link>
 
         <div className="hidden md:flex md:items-center md:gap-8">
