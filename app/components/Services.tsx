@@ -57,7 +57,7 @@ export default function Services() {
           {services.map(({ icon: Icon, title, description, href }) => (
             <div
               key={title}
-              className="group rounded-2xl border border-gray-100 bg-cream/50 p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
+              className="group flex flex-col rounded-2xl border border-gray-100 bg-cream/50 p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-navy text-amber-accent">
                 <Icon className="h-6 w-6" />
@@ -65,7 +65,7 @@ export default function Services() {
               <h3 className="mt-4 font-display text-xl font-semibold text-navy">
                 {title}
               </h3>
-              <p className="mt-2 text-gray-600">{description}</p>
+              <p className="mt-2 flex-grow text-gray-600">{description}</p>
               <Link
                 href={href}
                 className="mt-4 inline-flex items-center gap-1 text-amber-dark font-medium hover:text-amber-accent transition-colors"
