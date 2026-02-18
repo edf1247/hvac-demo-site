@@ -25,8 +25,8 @@ export default function EmergencyBanner() {
 
   return (
     <div
-      className={`fixed left-0 right-0 top-0 z-50 transition-transform duration-300 ${
-        visible ? "translate-y-0" : "-translate-y-full"
+      className={`fixed left-0 right-0 bottom-0 z-50 transition-transform duration-300 ${
+        visible ? "translate-y-0" : "translate-y-full"
       }`}
     >
       <a
